@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Futra, sans-serif;
+    background-color: #151515;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: 'Futra';
+    src: url('FuturaCyrillicLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Futramed';
+    src: url('FuturaCyrillicMedium.ttf') format('truetype');
+}
+
+h1{
+    color: #ffc66b;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 1150%;
+    margin-left: 50px;
+    animation: enter 1s ease-in-out;
+}
+.navlogo{
+    width: 6%;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.nav{
+    display:inline-block;
+    align-items: left;
+    background-color: #1a1a1a;
+    padding: 5px 20px;
+    box-shadow: 0px 18px 175px rgba(0, 0, 0, 0.468);
+
+     /*border-radius: 100px;*/
+    border: 3px solid #fffefd2f;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    animation: down 1s ease-in-out;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.navthick, .navbut, .cart{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 300%;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+.navthick{
+    background-color: #fffffe;
+    color: #151515;
+    border:none;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    font-family: Futramed, sans-serif;
+    transition-duration: 0.3s;
+}
+.navbut{
+    background-color: #151515;
+    color: #fffffe;
+    border: 3px solid #fffffe;
+    font-family: Futramed, sans-serif;
+    transition-duration: 0.3s;
+}
+.navbut:hover{
+    background-color: #fffffe;
+    color: #151515;
+    font-size: 310%;
+}
+.navthick:hover{
+    background-color: #ffb14a;
+    color: #151515;
+    font-size: 300%;
+}
+.cart{
+    background-color: #151515;
+    background-image: linear-gradient(to right, rgb(255, 94, 0) , rgb(255, 208, 0));
+    color: #6d2f00;
+    border: 3px solid #fffffe;
+    font-family: Futramed, sans-serif;
+    transition-duration: 0.3s;
+}
+.cart:hover{
+    background-color: #fffffe;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255));
+    color: #151515;
+    font-size: 310%;
+}
+.ridgehome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.bigimage{
+    width: 70%;
+    margin-right: 80px;
+    border-radius: 20px;
+    border: 3px solid #fffffe;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    animation: right 1s ease-in-out;
+}
+p{
+    color: #fffffe;
+    font-size: 500%;
+    margin-top: 0px;
+    text-align: center;
+}
+.Packages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+
+}
+h2{
+    color: #ffb14a;
+    text-align: center;
+    font-size: 1500%;
+    margin-top: 50px;
+}
+h3{
+    color: #ffc66b;
+    text-align: center;
+    font-size: 1000%;
+    margin-top: 50px;
+}
+.Package{
+    background-color: #1c1c1c;
+    padding: 50px;
+    border-radius: 100px;
+    border: 3px solid #fffffe;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0), inset 10px 0px 0px #5c5c5c;
+    margin: 20px;
+    font-size: 80%;
+}
+.packp{
+    color:#ffffff;
+    font-size: 500%;
+    text-align: center;
+}
+.packbut{
+    background-color: #ffb14a;
+    color: #151515;
+    border: 3px solid #fffffe;
+    font-family: Futramed, sans-serif;
+    font-size: 500%;
+    padding: 15px 25px;
+    border-radius: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 50px #ffb14aba;
+    transition-duration: 0.3s;
+}
+.packbut:hover{
+    background-color: #ffdba0;
+    font-size: 510%
+}
+.basic{
+    color: #ffb14a;;
+}
+.recomended{
+    color: #20d56f;
+    background-color: #3ce78029;
+    border-radius: 100px;
+    animation-iteration-count:infinite ;
+    --animation-duration: 8s;
+}
+.best{
+    color: #ff4c4c;
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.packimg{
+    width: 50%;
+    border-radius: 20px;
+    border: 3px solid #fffffe;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info{
+    color: #3a3a3a;
+    font-size: 400%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.faq{
+    margin-bottom: 0px;
+}
+.question{
+    color: #ffffff;
+    font-size: 600%;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #4e4e4e36;
+    border-radius: 100px;
+    border: 3px solid #fffffe56;
+}
+.answer{
+    color: #ffdba0;
+    font-size: 400%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #33333336; 
+    margin-bottom: 10%;
+}
+audio{
+    border-radius: 100px;
+    box-shadow: 0px 0px 50px #ffdba0;
+    margin: 30px;
+    display:block;
+    text-align: center;
+}
+.yel{
+    transition-duration: 0.3s;
+}
+.yel:hover{
+    box-shadow: 0px 18px 175px #ffb82b, inset 20px 0px 0px #ffb82b;
+}
+.gre{
+    transition-duration: 0.3s;
+}
+.gre:hover{
+    box-shadow: 0px 18px 175px #2bff4e, inset 20px 0px 0px #2bff4e;
+}
+.re{
+    transition-duration: 0.3s;
+}
+.re:hover{
+    box-shadow: 0px 18px 175px #ff2b2b, inset 20px 0px 0px #ff2b2b;
+}
+table, th, td {
+  
+  border-collapse: collapse;
+    width: 90%;
+    border: 3px solid #fffffe;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 180%;
+    background-color: #4e4e4e36;
+    color: #fffffe;
+    font-weight: 700;
+    padding: 10px;
+}
+.dark{
+    background: #1a1a1a;
+    color: #ffdba0;
+    font-weight: 800;
+}
+.thinh1{
+    color: #fffffe;
+    font-weight:400;
+    font-size: 800%;
+}
+.a{
+    color: #ffdba0;
+    text-decoration-thickness: 3px;
+    transition-duration: 0.2s;
+}
+.a:hover{
+    color: #ff8a54;
+    font-size: 105%;
+}
+#pack, #qa{
+    scroll-margin-top:140px;
+}
+.lefp{
+    text-align: left;
+    margin-left: 50px;
+    color: #ffc66b;
+}
+.smp{
+
+    text-align: left;
+    margin-left: 50px;
+    color: #ffdba0;
+    font-size: 350%;
+}
+.w{
+    color: #fffffe;
+}
+.navbut, .navthick, .cart{
+    font-size: 230%;
+}
+hr{
+    border:3px, rgba(255, 255, 255, 0.133), dashed;
+}
