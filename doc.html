@@ -13,11 +13,27 @@
 
     <a href=""><button class="navthick">Sign In</button></a>
     <a href="index.html"><button class="navbut">Home</button></a>
-    <a href="#pack"><button class="navbut">Packages</button></a>
-     <a href="doc.html"><button class="navbut">Documentation</button></a>
-    <a href="#qa"><button class="navbut">Q8As</button></a>
+    <a href="index.html#pack"><button class="navbut">Packages</button></a>
+    <a href="doc.html"><button class="navbut">Documentation</button></a>
+    <a href=""><button class="navbut">My Products</button></a>
+    <a href="index.html#qa"><button class="navbut">Q8As</button></a>
     <a href=""><button class="cart">Cart</button></a>
+
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
     </div>
+
+
+     <aside id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">Sign In</a>
+        <a href="">Home</a>
+        <a href="#pack">Packages</a>
+        <a href="doc.html">Documentation</a>
+        <a href="">My Products</a>
+        <a href="#qa">Q8As</a>
+        <a href="">Cart</a>
+    </aside>
 
     <h1>Documentaton Site</h1>
     <p class="lefp w">Having any issues? Find missing steps here.</p> 
@@ -87,6 +103,16 @@
 
         All third-party software remains subject to its respective manufacturer's licensing terms.
         </p>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+  </script>
+
 </head>
 <body>
     
